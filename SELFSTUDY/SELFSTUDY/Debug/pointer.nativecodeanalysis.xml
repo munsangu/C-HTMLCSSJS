@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\82109\source\repos\SELFSTUDY\SELFSTUDY\</FILEPATH>
+      <FILENAME>pointer.c</FILENAME>
+      <LINE>147</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6273</DEFECTCODE>
+    <DESCRIPTION>정수가 아닌 항목이 _Param_(2)으로 전달되었습니다. 'printf'에 대한 호출에는 정수가 필요합니다. 실제 형식: 'int *'. 포인터 값이 전달되는 경우 %p을(를) 사용해야 합니다.</DESCRIPTION>
+    <FUNCTION>swap</FUNCTION>
+    <DECORATED>swap</DECORATED>
+    <FUNCLINE>145</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\82109\source\repos\SELFSTUDY\SELFSTUDY\</FILEPATH>
+      <FILENAME>pointer.c</FILENAME>
+      <LINE>147</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6273</DEFECTCODE>
+    <DESCRIPTION>정수가 아닌 항목이 _Param_(3)으로 전달되었습니다. 'printf'에 대한 호출에는 정수가 필요합니다. 실제 형식: 'int *'. 포인터 값이 전달되는 경우 %p을(를) 사용해야 합니다.</DESCRIPTION>
+    <FUNCTION>swap</FUNCTION>
+    <DECORATED>swap</DECORATED>
+    <FUNCLINE>145</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

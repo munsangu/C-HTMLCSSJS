@@ -14,7 +14,7 @@ void initDate();
 void printfFishes();
 void decreaseWater();
 
-int main(void) 
+int main_pointer_project(void) 
 {
 	long startTime = 0; // 게임 시작 시간
 	long totalElapsedTime = 0; // 총 경과시간
