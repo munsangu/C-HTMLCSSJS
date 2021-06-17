@@ -30,12 +30,12 @@ int main(void)
 		else if (num2 > num)
 				{
 					printf("DOWN!\n");
-					printf("남은 기회 %d번\n", count--);
+					printf("남은 기회 %d번\n", --count);
 				}
 		else
 				{
 					printf("UP!\n");
-					printf("남은 기회 %d번\n", count--);
+					printf("남은 기회 %d번\n", --count);
 				}
 		if (count == 0) 
 		{
