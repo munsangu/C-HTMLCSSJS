@@ -13,9 +13,15 @@ int main(void)
 	printf("\n\n ========== 숫자 맞추기 ========== \n");
 	while (count > 0)
 	{
-		printf("남은 기회 %d번\n",count--);
-		printf("숫자 입력(1~100):  ");
+		
+		
+		printf("숫자 입력(1~100) 총 5번의 기회:  ");
 		scanf_s("%d", &num2);
+		if (num2 > 100)
+		{
+			printf("입력 오류! 1 ~ 100 사이의 숫자만 입력! \n");
+			continue;
+		}
 		if (num2 == num)
 				{
 					printf("정답!\n");
@@ -24,10 +30,12 @@ int main(void)
 		else if (num2 > num)
 				{
 					printf("DOWN!\n");
+					printf("남은 기회 %d번\n", count--);
 				}
 		else
 				{
 					printf("UP!\n");
+					printf("남은 기회 %d번\n", count--);
 				}
 		if (count == 0) 
 		{
