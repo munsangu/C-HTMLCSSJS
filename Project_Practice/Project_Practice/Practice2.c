@@ -1,7 +1,7 @@
 #include <stdio.h>	
 
 
-int main(void) 
+int main_practice2(void) 
 {
 	
 	for (int i = 0; i < 5; i++) 
