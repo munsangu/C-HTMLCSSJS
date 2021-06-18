@@ -1,4 +1,4 @@
-﻿  Practice3.c
-C:\Users\82109\source\repos\Project_Practice\Project_Practice\Practice3.c(6,7): warning C4013: 'srand'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Users\82109\source\repos\Project_Practice\Project_Practice\Practice3.c(7,16): warning C4013: 'rand'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+﻿  Practice5.c
+C:\Users\82109\source\repos\Project_Practice\Project_Practice\Practice5.c(6,7): warning C4013: 'srand'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\82109\source\repos\Project_Practice\Project_Practice\Practice5.c(9,22): warning C4013: 'rand'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
   Project_Practice.vcxproj -> C:\Users\82109\source\repos\Project_Practice\Debug\Project_Practice.exe

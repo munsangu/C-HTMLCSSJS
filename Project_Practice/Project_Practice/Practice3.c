@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 
-int main(void) 
+int main_practice3(void) 
 {
 	srand(time(NULL));
 	int num = rand() % 100 + 1;
