@@ -1,4 +1,9 @@
-﻿  Practice5.c
-C:\Users\82109\source\repos\Project_Practice\Project_Practice\Practice5.c(6,7): warning C4013: 'srand'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Users\82109\source\repos\Project_Practice\Project_Practice\Practice5.c(9,22): warning C4013: 'rand'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+﻿  Practice6.c
+C:\Users\82109\source\repos\Project_Practice\Project_Practice\Practice6.c(14,7): warning C4013: 'srand'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\82109\source\repos\Project_Practice\Project_Practice\Practice6.c(61,9): warning C4013: 'exit'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  Practice7.c
+C:\Users\82109\source\repos\Project_Practice\Project_Practice\Practice7.c(19,7): warning C4013: 'srand'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\82109\source\repos\Project_Practice\Project_Practice\Practice7.c(66,22): warning C4013: 'foundAllAnimals'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\82109\source\repos\Project_Practice\Project_Practice\Practice7.c(120,21): warning C4013: 'rand'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  코드를 생성하고 있습니다...
   Project_Practice.vcxproj -> C:\Users\82109\source\repos\Project_Practice\Debug\Project_Practice.exe

@@ -1,7 +1,7 @@
 #include <stdio.h>	
 #include <time.h>	
 
-int main(void) 
+int main_practice5(void) 
 {
 	srand(time(NULL));
 	printf("\n\n === ¾à Ã£±â ===\n\n");
