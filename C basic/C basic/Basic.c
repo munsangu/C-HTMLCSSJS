@@ -3,6 +3,7 @@
 #include<math.h>
 #define MONTHS 12
 #define SECOND_PER_MINUTE 60;
+#define N 10
 
 int main(void) 
 {
@@ -99,14 +100,14 @@ int main(void)
 	//int f = abs(-2);
 	//printf("-2의 절대값 = %d\n", f);
 
-	printf("======== 조건문 ========\n");
+	/*printf("======== 조건문 ========\n");*/
 	/*int x = -50;
 	if (x < 0) 
 	{
 		x = -x;
 	}
 	printf("x의 절대값 = %d\n", x);*/
-	int y = 85;
+	/*int y = 85;
 	if (y > 95) 
 	{
 		printf("A+");
@@ -134,7 +135,120 @@ int main(void)
 	else
 	{
 		printf("F");
-	}
+	}*/
 
+	/*int year = 2016;
+	if ((year % 4 == 0 && year != 100) || year % 400 == 0) 
+	{
+		printf("%d년은 윤년\n", year);
+	}
+	else 
+	{
+		printf("%d년은 윤년이 아님\n", year);
+	}*/
+
+	printf("======== 반복문 ========\n");
+	//int i = 1;
+	//int sum=0;
+	//while(i <= 1000)
+	//{
+	//	sum = sum + i;
+	//	i++;
+	//}
+	///*for (int i = 1; i <= 1000; i++) 
+	//{
+	//	sum = sum + i;
+	//}*/
+	//printf("1부터 1000까지의 합 : %d\n", sum);
+
+	/*for (int i = 0; i < N; i++) 
+	{
+		for (int j = 0; j < N; j++) 
+		{
+			printf("★");
+		}
+		printf("\n");
+	}*/
+
+	/*for(int i = 0; i < 5; i++) 
+	{
+		for (int j = i; j < 4; j++) 
+		{ 
+			printf(" "); 
+		}
+		for (int k = 0; k < 2*i+1; k++) 
+		{
+			printf("*");
+		}
+		printf("\n");
+	}*/
+
+	/*int a, b;
+	char o;
+
+	while (1) 
+	{
+		printf("수식 입력 : \n");
+		scanf_s("%d", &a);
+		scanf_s("%c", &o);
+		scanf_s("%d", &b);
+		if (o == '+') 
+		{
+			printf("%d %c %d = %d\n", a,o,b,a + b);
+
+		}
+		else if (o == '-') 
+		{
+			printf("%d %c %d = %d\n", a,o,b,a- b);
+
+		}
+		else if (o == '*') 
+		{
+			printf("%d %c %d = %d\n", a,o,b,a * b);
+		}
+		else if (o == '/') 
+		{
+			printf("%d %c %d = %d\n", a, o, b, a / b);
+		}
+		else 
+		{
+			printf("%d %c %d = %d\n", a, o, b, a % b);
+		}	
+		getchar();
+		printf("프로그램 종료?(y/n)\n");
+		scanf_s("%c", &o);
+		if (o == 'n' || o == 'N')
+		{
+			continue;
+		}
+		else if (o == 'y' || o == 'Y')
+		{
+			break;
+		}
+		else
+		{
+			printf("입력 오류\n");
+		}
+	}*/
+
+	/*int i ;
+	int sum=0;
+	printf("숫자 입력: \n");
+	scanf_s("%d", &i);
+	for (int j = 1; j <= i; j++) 
+	{
+		sum = sum + j;
+	}
+	printf("1부터 %d까지의 합 : %d\n", i,sum);*/
+
+	int i;
+	int sum = 0;
+	printf("숫자입력(구구단)\n");
+	scanf_s("%d", &i);
+	for (int j = 1; j < 10; j++) 
+	{
+		printf("%d * %d = %d\n", i, j, i * j);
+	}
+	printf("\n");
 	return 0;
 }
