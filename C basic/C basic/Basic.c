@@ -5,7 +5,7 @@
 #define SECOND_PER_MINUTE 60;
 #define N 10
 
-int main(void) 
+int main_basic1(void) 
 {
 	/*printf("Hello World!\n");*/
 
@@ -147,7 +147,7 @@ int main(void)
 		printf("%d년은 윤년이 아님\n", year);
 	}*/
 
-	printf("======== 반복문 ========\n");
+	/*printf("======== 반복문 ========\n");*/
 	//int i = 1;
 	//int sum=0;
 	//while(i <= 1000)
@@ -241,7 +241,7 @@ int main(void)
 	}
 	printf("1부터 %d까지의 합 : %d\n", i,sum);*/
 
-	int i;
+	/*int i;
 	int sum = 0;
 	printf("숫자입력(구구단)\n");
 	scanf_s("%d", &i);
@@ -249,6 +249,7 @@ int main(void)
 	{
 		printf("%d * %d = %d\n", i, j, i * j);
 	}
-	printf("\n");
+	printf("\n");*/
+	
 	return 0;
 }
