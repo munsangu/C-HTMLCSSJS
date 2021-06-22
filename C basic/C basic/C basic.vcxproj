@@ -140,9 +140,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Basic.c" />
-    <ClCompile Include="basic2.c" />
-    <ClCompile Include="basic3.c" />
-    <ClCompile Include="basic4.c" />
+    <ClCompile Include="Basic10.c" />
+    <ClCompile Include="Basic2.c" />
+    <ClCompile Include="Basic3.c" />
+    <ClCompile Include="Basic4.c" />
+    <ClCompile Include="Basic5.c" />
+    <ClCompile Include="Basic6.c" />
+    <ClCompile Include="Basic7.c" />
+    <ClCompile Include="Basic8.c" />
+    <ClCompile Include="Basic9.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

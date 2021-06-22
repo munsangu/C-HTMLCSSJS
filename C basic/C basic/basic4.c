@@ -21,7 +21,7 @@ int getDays(int mon, int day)
 	return sum + day;
 }
 
-int main(void) 
+int main_basic4(void) 
 {
 	int month, day;
 	printf("월 일 입력: ");

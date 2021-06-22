@@ -5,7 +5,7 @@
 #define SECOND_PER_MINUTE 60;
 #define N 10
 
-int main_basic1(void) 
+int main_basic(void) 
 {
 	/*printf("Hello World!\n");*/
 
