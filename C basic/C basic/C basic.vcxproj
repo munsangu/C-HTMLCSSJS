@@ -141,6 +141,8 @@
   <ItemGroup>
     <ClCompile Include="Basic.c" />
     <ClCompile Include="Basic10.c" />
+    <ClCompile Include="Basic11.c" />
+    <ClCompile Include="Basic12.c" />
     <ClCompile Include="Basic2.c" />
     <ClCompile Include="Basic3.c" />
     <ClCompile Include="Basic4.c" />

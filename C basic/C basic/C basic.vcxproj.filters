@@ -45,5 +45,11 @@
     <ClCompile Include="Basic10.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Basic11.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Basic12.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
