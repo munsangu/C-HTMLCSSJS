@@ -1,2 +1,2 @@
-﻿  Basic12.c
-  C basic.vcxproj -> C:\Users\82109\source\repos\C basic\Debug\C basic.exe
+﻿  Basic16.c
+C:\Users\82109\source\repos\C basic\C basic\Basic16.c(8,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.

@@ -143,6 +143,10 @@
     <ClCompile Include="Basic10.c" />
     <ClCompile Include="Basic11.c" />
     <ClCompile Include="Basic12.c" />
+    <ClCompile Include="Basic13.c" />
+    <ClCompile Include="Basic14.c" />
+    <ClCompile Include="Basic15.c" />
+    <ClCompile Include="Basic16.c" />
     <ClCompile Include="Basic2.c" />
     <ClCompile Include="Basic3.c" />
     <ClCompile Include="Basic4.c" />
