@@ -6,16 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero~</title>
     <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/main.js"></script>
+    <script defer src="./js/main.js"></script>
     <style>
       div {
         text-decoration: underline;
       }
+      body
+      {
+        font-size: 50px;
+      }
     </style>
 </head>
 <body>
-  <a href="https://naver.com">NAVER</a>
+  <!-- 주석 Ctrl+/ -->
+  <a href="https://naver.com" target="_blank" title="네이버로 이동">NAVER</a>
+  <a href="https://google.com">GOOGLE</a>
   <a href="/about">About</a>
   <a href="/login">Login</a>
+  <br/>
+  <input type="text" value="여기에 입력"placeholder="이름 입력"/>
+  <br/>
+  <input type="text" placeholder="이름 입력"/>
+  <br/>
+  <input type="text" disabled/>
+  <label><input type="checkbox"> Auto Save</label>
+  <label><input type="checkbox" checked> Test</label>
+  <label><input type="radio"> Ko</label>
+  <table>
+    <tr>
+      <td title="시작">A</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>D</td>
+    </tr>
+  </table>
+  <div data-fruit-name="apple">사과</div>
+  <div data-fruit-name="banana">바나나</div>
 </body>
 </html>
