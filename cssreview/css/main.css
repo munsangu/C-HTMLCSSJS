@@ -1,0 +1,71 @@
+/* span {
+  max-width: none;
+  max-height: none;
+  background-color: cornflowerblue;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+div {
+  min-width: none;
+  min-height: none;
+  background-color: orange;
+  margin: 10px 10px 10px 10px;
+  border: 2px solid red;
+  box-sizing: content-box;
+} */
+/* body {
+  height: 3000px;
+}
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: cornflowerblue;
+  overflow: auto;
+}
+.item {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  opacity: 0.5;
+}
+p {
+  font-size: 16x;
+  line-height: 32px;
+  color: cornflowerblue;
+  text-align: justify;
+  text-decoration: underline;
+  text-indent: 100px;
+}
+.icon {
+  width: 200px;
+  height: 200px;
+  background-color: cornsilk;
+  background-image: url("https://image.flaticon.com/icons/png/512/1216/1216649.png");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+} */
+.bos {
+  width: 400px;
+  height: 400px;
+  background-color: tomato;
+}
+.container {
+  width: 200px;
+  height: 200px;
+  background-color: cornsilk;
+}
+.container .item {
+  width: 60px;
+  height: 60px;
+  background-color: orange;
+  border: 3px dashed blue;
+}
+.item :nth-child(2) {
+  position: absolute;
+  top: 500px;
+  left: 500px;
+}
