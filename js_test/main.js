@@ -221,12 +221,457 @@
 
 // setTimeout(함수, 시간)
 
-function timeout(cb) {
-  setTimeout(() => {
-    console.log('Ironman')
-    cb()
-  }, 3000);
+// function timeout(cb) {
+//   setTimeout(() => {
+//     console.log('Ironman')
+//     cb()
+//   }, 3000);
+// }
+// timeout(() => {
+// console.log('Done!')
+// })
+
+// 생성자 함수
+// function User(first, last) {
+//   this.firstName = first
+//   this.lastName = last
+// }
+// User.prototype.getFullName = function () {
+//   return `${this.firstName} ${this.lastName}`
+// }
+ 
+// const hero = new User('Hero','Ironman')
+// const hero2 = new User('Hero2', 'Thor')
+// const hero3 = new User('Hero3', 'Hurk')
+
+// console.log(hero.getFullName())
+// console.log(hero2.getFullName())
+// console.log(hero3.getFullName())
+
+// this
+// 일반(Normal) 함수는 호출 위치에 따라 this 정의
+// 화살표(Arrow) 함수는 자신이 선언된 함수 범위에서 this 정의
+
+// const hero = {
+//   name:'Hero',
+//   normal: function () {
+//     console.log(this.name)
+//   },
+//   arrow: () => {
+//     console.log(this.name)
+//   }
+// }
+// hero.normal()
+// hero.arrow()
+
+// const hero2 = {
+//   name: 'Hurk',
+//   normal: hero.normal,
+//   arrow: hero.arrow
+// }
+// hero2.normal()
+// hero2.arrow()
+
+// const timer = {
+//   name: 'Ironman',
+//   timeout: function () {
+//     setTimeout(() => {
+//       console.log(this.name)
+//     }, 2000)
+//   }
+// }
+// timer.timeout()
+
+// ES6 Classes
+
+// function User(first, last) {
+//   this.firstName = first
+//   this.lastName = last
+// }
+// User.prototype.getFullName = function () {
+//   return `${this.firstName} ${this.lastName}`
+// }
+ 
+// class User{
+//   constructor(first, last) {
+//     this.firstName = first
+//     this.lastName = last
+//   }
+//   getFullName() {
+//     return `${this.firstName} ${this.lastName}`
+//   }
+// }
+
+// const hero = new User('Hero','Ironman')
+// const hero2 = new User('Hero2', 'Thor')
+// const hero3 = new User('Hero3', 'Hurk')
+
+// console.log(hero.getFullName())
+// console.log(hero2.getFullName())
+// console.log(hero3.getFullName())
+
+// class Vehicle {
+//   constructor(name, wheel) {
+//     this.name = name
+//     this.wheel = wheel
+//   }
+// }
+// const myVehicle = new Vehicle('운송수단', 2)
+// console.log(myVehicle)
+
+// class Bicycle extends Vehicle {
+//   constructor(name, wheel){
+//     super(name, wheel)
+//   }
+// }
+// const myBicycle = new Bicycle('삼천리', 2)
+// const dauhterBicycle = new Bicycle('세발', 3)
+// console.log(myBicycle)
+// console.log(dauhterBicycle)
+
+// class Car extends Vehicle {
+//   constructor(name, wheel, license){
+//     super(name, wheel)
+//     this.license = license
+//   }
+// }
+// const myCar = new Car('람보르기니', 4, true)
+// const daughterCar = new Car('포르쉐', 4, false)
+// console.log(myCar)
+// console.log(daughterCar)
+
+// const str = '012 34567'
+// const str2 = 'theiron@gmial.com'
+// const str3 = '     Hello world  '
+
+// console.log(str.length)
+// console.log('0123'.length)
+// console.log(str.indexOf('0123'))
+// console.log(str.indexOf('Ironman') !==-1)
+// console.log(str.slice(0,3))
+// console.log(str.slice(4,8))
+// console.log(str.replace('012','Ironman'))
+// console.log(str.replace(' 34567',''))
+// console.log(str2.match(/.+(?=@)/)[0])
+// console.log(str3.trim())
+
+// const pi = 3.14159265258979
+// console.log(pi)
+
+// const str = pi.toFixed(2)
+// console.log(str)
+// console.log(typeof str)
+
+// const integer = parseInt(str)
+// const float = parseFloat(str)
+// console.log(integer)
+// console.log(float)
+// console.log(typeof integer, typeof float)
+
+// console.log('abs: ',Math.abs(-12))
+// console.log('min: ', Math.min(2,8))
+// console.log('max: ',Math.max(2,8))
+// console.log('ceil: ', Math.ceil(3.14))   // 올림
+// console.log('floor: ',Math.floor(3.14))  // 내림
+// console.log('round: ',Math.round(3.14))  // 반올림
+// console.log('random: ',Math.random())
+
+// const numbers = [1, 2, 3, 4]
+// const fruits = ['Apple', 'Banana', 'Cherry']
+
+// console.log(numbers)
+// console.log(numbers[2])
+// console.log(fruits)
+// console.log(fruits[2])
+
+// .length
+
+// const numbers = [1, 2, 3, 4]
+// const fruits = ['Apple', "Banana", 'Cherry']
+
+// console.log(numbers.length)
+// console.log(fruits.length)
+// console.log([1,2].length)
+
+// console.log([].length)
+
+// .concat()
+
+// const numbers = [1, 2, 3, 4]
+// const fruits = ['Apple', "Banana", 'Cherry']
+
+// console.log(numbers.concat(fruits))
+// console.log(numbers)
+// console.log(fruits)
+
+// .forEach()
+
+// const numbers = [1, 2, 3, 4]
+// const fruits = ['Apple', "Banana", 'Cherry']
+
+// fruits.forEach(function (fruit, i) {
+//   console.log(fruit, i)
+// })
+
+// .map()
+
+// const numbers = [1, 2, 3, 4]
+// const fruits = ['Apple', "Banana", 'Cherry']
+
+// const a = fruits.forEach((fruit, i) => {
+//   console.log(`${fruit}-${i}`)
+// })
+// console.log(a)
+
+// const b = fruits.map((fruit, i) => ({
+//   id: i,
+//   name: fruit
+// }))
+// console.log(b)
+
+// .filter()
+
+// const numbers = [1, 2, 3, 4]
+// const fruits = ['Apple', "Banana", 'Cherry']
+
+// const a = numbers.map(number => number <3)
+// console.log(a)
+
+// const b = numbers.filter(number => number <3)
+// console.log(b)
+
+// console.log(numbers)
+
+// .find() .findIndex()
+
+// const numbers = [1, 2, 3, 4]
+// const fruits = ['Apple', "Banana", 'Cherry']
+
+// const a = fruits.find(fruit => /^C/.test(fruit))
+// console.log(a)
+// const b = fruits.findIndex(fruit => /^C/.test(fruit))
+// console.log(b)
+
+// .includes()
+
+// const numbers = [1, 2, 3, 4]
+// const fruits = ['Apple', "Banana", 'Cherry']
+
+// const a = numbers.includes(3)
+// console.log(a)
+
+// const b = fruits.includes('HERO')
+// console.log(b)
+
+// .push() .unshift()
+// 원본 수정됨 
+
+// const numbers = [1, 2, 3, 4]
+// const fruits = ['Apple', "Banana", 'Cherry']
+
+// numbers.push(5)         // 맨 뒤에 삽입
+// console.log(numbers)
+// numbers.unshift(0)      // 맨 앞에 삽입
+// console.log(numbers)
+
+// .reverse()
+// 원본 수정됨
+
+// const numbers = [1, 2, 3, 4]
+// const fruits = ['Apple', "Banana", 'Cherry']
+
+// numbers.reverse()
+// fruits.reverse()
+
+// console.log(numbers)
+// console.log(fruits)
+
+// .splice(인덱스 시작점, 지울 개수, 넣을 숫자)
+// 원본 수정됨
+
+// const numbers = [1, 2, 3, 4]
+// const fruits = ['Apple', "Banana", 'Cherry']
+
+// numbers.splice(2,1,999)
+// console.log(numbers)
+
+// fruits.splice(2, 0, 'Orange')
+// console.log(fruits)
+
+// const userAge = {
+//   // key: value
+//   name: 'HERO',
+//   age: 100
+// }
+// const userEmall = {
+//   name: 'HERO',
+//   email: 'the@gmail.com'
+// }
+
+// const target = Object.assign({}, userAge, userEmall)
+// console.log(target)
+// console.log(userAge)
+// console.log(target === userAge)
+
+// const a = {k: 123}
+// const b = {K: 123}
+// console.log(a === b)
+
+// const user = {
+//   name: 'HERO',
+//   age: 100,
+//   email: 'the@gmail.com'
+// }
+
+// const keys = Object.keys(user)
+// console.log(keys)
+// // ['name', 'age', 'email']
+
+// console.log(user['email'])
+
+// const values = keys.map(key => user[key])
+// console.log(values)
+
+// 구조 분해 할당(Destructuring assignment)
+// 비구조화 할당
+
+// const user = {
+//   name: 'HERO',
+//   age: 100,
+//   email: 'the@google.com',
+//   address: 'UN'
+// }
+// const {name:hero, age, email, address='Korea'} = user
+// // E.g, user.address
+
+// console.log(`사용자의 이름은 ${hero}입니다.`)
+// console.log(`${hero}의 나이는 ${age}세 입니다.`)
+// console.log(`${hero}의 이메일 주소는 ${email}입니다.`)
+// console.log(address)
+
+// const fruits = ['Apple', 'Banana', 'Cherry']
+// const [, b,] = fruits
+// console.log(b)
+
+// 전개 연산자(Spread)
+
+// const fruits = ['Apple', 'Banana', 'Cherry', 'Orange']
+// console.log(fruits)
+// console.log(...fruits)
+// // console.log('Apple', 'Banana', 'Cherry', 'Orange')
+
+// const toObject = (a, b, ...c) => ({a, b, c})
+// console.log(toObject(...fruits))
+
+// 데이터 불변성(Immutability)
+// 원시 데이터: String, Number, Boolean, undefined, null
+// 참조형 데이터: Object, Array, Function
+// let a = 1
+// let b = 4
+// console.log(a, b, a === b)
+// b = a
+// console.log(a, b, a === b)
+// a = 7
+// console.log(a, b, a === b)
+// let c = 1
+// console.log(b, c, b === c)
+// let a = { K: 1}
+// let b = { K: 1}
+// console.log(a, b, a === b)
+// a.k = 7
+// b = a
+// console.log(a, b, a === b)
+// a.k = 2
+// console.log(a, b, a === b)
+// let c = b
+// console.log(a, b, c, a === c)
+// a.k = 9
+// console.log(a, b, c, a === c)
+
+// 얕은 복사(Shallow copy), 깊은 복사(Deep copy)
+// const user = {
+//   name: 'Hero',
+//   age: 100,
+//   emails: ['the@google.com']
+// }
+// const copyUser = _.cloneDeep(user)
+// console.log(copyUser === user)
+
+// user.age = 22
+// console.log('user',user)
+// console.log('copyUser',copyUser)
+
+// console.log('-----')
+// console.log('-----')
+
+// user.emails.push('iron@marvel.com')
+// console.log(user.emails === copyUser.emails)
+// console.log('user', user)
+// console.log('copyUser', copyUser)
+
+// import _ from 'lodash'
+// import checkType from './getType'
+// // import { random, user as Ironman } from './getRandom'
+// import * as R from './getRandom'
+
+// console.log(_.camelCase('the hello world'))
+// console.log(checkType([1, 2, 3]))
+// // console.log(random(), random())
+// console.log(R)
+
+// import _ from 'lodash'
+
+// const usersA = [
+//   { userId: '1', name: 'Ironman'},
+//   { userId: '2', name: 'Thor'}
+// ]
+// const usersB = [
+//   { userId: '1', name: 'Ironman'},
+//   { userId: '3', name: 'Hurk'}
+// ]
+
+// const usersC = usersA.concat(usersB)
+// console.log('concat', usersC)
+// console.log('uniqBy', _.uniqBy(usersC, 'userId'))
+
+// const usersD = _.unionBy(usersA, usersB, 'userId')
+// console.log('unionBy', usersD)
+
+// const users = [
+//   { userId: '1', name: 'A'},
+//   { userId: '2', name: 'B'},
+//   { userId: '3', name: 'C'},
+//   { userId: '4', name: 'D'},
+//   { userId: '5', name: 'E'}
+// ]
+
+// const foundUser = _.find(users, { name: 'B'})
+// const foundUserIndex = _.findIndex(users, { name: 'B'})
+// console.log(foundUser)
+// console.log(foundUserIndex)
+
+// _.remove(users, { name: 'A'})
+// console.log(users)
+
+// JSON(JavaScript Object Notation)
+// 자바스크립트의 객체 표기법
+import myData from './myData.json'
+
+console.log(myData)
+
+const user = {
+  name: 'HERO',
+  age: 100,
+  emails: [
+    'one@google.com',
+    'two@google.com'
+  ]
 }
-timeout(() => {
-console.log('Done!')
-})
+console.log('user',user)
+
+const str = JSON.stringify(user)
+console.log('str', str)
+console.log(typeof str)
+
+const obj = JSON.parse(str)
+console.log('obj', obj)
