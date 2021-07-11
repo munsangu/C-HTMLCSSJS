@@ -655,23 +655,53 @@
 
 // JSON(JavaScript Object Notation)
 // 자바스크립트의 객체 표기법
-import myData from './myData.json'
+// import myData from './myData.json'
 
-console.log(myData)
+// console.log(myData)
 
-const user = {
-  name: 'HERO',
-  age: 100,
-  emails: [
-    'one@google.com',
-    'two@google.com'
-  ]
-}
-console.log('user',user)
+// const user = {
+//   name: 'HERO',
+//   age: 100,
+//   emails: [
+//     'one@google.com',
+//     'two@google.com'
+//   ]
+// }
+// console.log('user',user)
 
-const str = JSON.stringify(user)
-console.log('str', str)
-console.log(typeof str)
+// const str = JSON.stringify(user)
+// console.log('str', str)
+// console.log(typeof str)
 
-const obj = JSON.parse(str)
-console.log('obj', obj)
+// const obj = JSON.parse(str)
+// console.log('obj', obj)
+
+// const user = {
+//   name: 'HERO',
+//   age: 100,
+//   emails: [
+//     'one@google.com',
+//     'two@google.com'
+//   ]
+// }
+
+// const str = localStorage.getItem('user')
+// const obj = JSON.parse(str)
+// obj.age = 22
+// console.log(obj)
+// localStorage.setItem('user', JSON.stringify(obj))
+
+// import axios from 'axios'
+
+// function fetchMovies() {
+//   axios
+//     .get('https://www.omdbapi.com/?apikey=7035c60c&s=frozen')
+//     .then( res => {
+//       console.log(res)
+//       const h1El = document.querySelector('h1')
+//       const imgEl = document.querySelector('img')
+//       h1El.textContent = res.data.Search[0].Title
+//       imgEl.src = res.data.Search[0].Poster
+//     } )
+// }
+// fetchMovies()
